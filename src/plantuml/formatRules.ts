@@ -230,6 +230,23 @@ let rules = <RulesWriting>{
                         includes: ["Quoted", "Block"],
                     }
                 },
+                {
+                    comment: "block activate",
+                    isBlock: true,
+                    begin: /{{LB}}(activate)\s*(.+)?/i,
+                    end: /{{LB}}(return|deactivate)\s*(.+)?{{LE}}/i,
+                    beginCaptures: {
+                        1: ElementType.word,
+                        2: ElementType.asIs,
+                    },
+                    endCaptures: {
+                        1: ElementType.word,
+                        2: ElementType.asIs,
+                    },
+                    patterns: {
+                        includes: ["Quoted", "Block"],
+                    }
+                },
                 // block {} must be the last rule,
                 // to avoid bad format like "note left of Foo {"
                 // or, the "{" is matched by this rule, "note left of Foo " will be matched 

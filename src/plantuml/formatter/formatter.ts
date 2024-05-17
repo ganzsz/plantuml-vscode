@@ -11,9 +11,9 @@ export class Formatter {
         public rules: Rules,
         public config: FormatterConfig,
     ) {
-        if (!config) this.config = {
-            allowInlineFormat: true,
-            allowSplitLine: true,
+        this.config = {
+            allowInlineFormat: false,
+            allowSplitLine: false,
             newLineForBlockStart: false
         }
     }

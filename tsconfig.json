@@ -3,7 +3,7 @@
         "module": "commonjs",
         "lib": ["es2021"],
         "target": "es6",
-        "outDir": "out",
+        "outDir": "../jebbs.plantuml-2.18.1/out",
         "sourceMap": true,
         "rootDir": "."
     },

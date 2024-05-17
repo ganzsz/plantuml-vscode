@@ -33,7 +33,7 @@
     "onCommand:plantuml.URLDocument",
     "onCommand:plantuml.extractSource"
   ],
-  "main": "./out/src/extension",
+  "main": "../jebbs.plantuml-2.18.1/out/src/extension",
   "contributes": {
     "languages": [
       {
