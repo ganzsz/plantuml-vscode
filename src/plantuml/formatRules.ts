@@ -81,15 +81,15 @@ let rules = <RulesWriting>{
                         type: ElementType.word,
                     }
                 },
-                {
-                    comment: "block multiple note of over",
-                    isBlock: true,
-                    begin: /{{LB}}([rh]?note)(?:\s+(right|left|top|bottom))?\s+(?:(?:(of|over)\s*(?:[^\s\w\d]([\w\s]+)[^\s\w\d]|(\w+)))|(on\s+link))\s*(#\w+)?{{LE}}/i,
-                    end: /{{LB}}end\s*note{{LE}}/i,
-                    patterns: {
-                        type: ElementType.word,
-                    }
-                },
+                // {
+                //     comment: "block multiple note of over",
+                //     isBlock: true,
+                //     begin: /{{LB}}([rh]?note)(?:\s+(right|left|top|bottom))?\s+(?:(?:(of|over)\s*(?:[^\s\w\d]([\w\s]+)[^\s\w\d:]|(\w+)))|(on\s+link))\s*(#\w+)?{{LE}}/i,
+                //     end: /{{LB}}end\s*note{{LE}}/i,
+                //     patterns: {
+                //         type: ElementType.word,
+                //     }
+                // },
                 {
                     comment: "block multi-line header, legend, footer",
                     isBlock: true,
